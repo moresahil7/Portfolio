@@ -7,8 +7,24 @@ import PhoneIcon from '@material-ui/icons/Phone';
 import EmailIcon from '@material-ui/icons/Email';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
 import ContactItem from '../Components/ContactItem';
+import emailjs from'emailjs-com'
+
 
 function ContactPage() {
+
+
+    const sendEmail=(e)=>{
+        e.preventDefault();
+
+
+        emailjs.sendForm('service_fhdptoa',
+        'template_2tfts8i',
+        e.target,
+        "user_7kIkPag8ITVAoBBB9xTTx")
+        .then(res => {
+            console.log(res);
+        }).catch(err => console.log(err));
+    }
     const phone = <PhoneIcon />
     const email = <EmailIcon />
     const location = <LocationOnIcon />
@@ -21,26 +37,29 @@ function ContactPage() {
                     <div className="contact-title">
                         <h4>Get In Touch</h4>
                     </div>
-                    <form  className="form">
+                    <form  className="form" onSubmit={sendEmail}>
                         <div className="form-field">
                             <label htmlFor="name"  >Enter your name*</label>
-                            <input type="text" id="name" required />
+                            <input type="text" name="name" id="name" required />
                         </div>
                         <div className="form-field">
                             <label htmlFor="email"  >Enter your email*</label>
-                            <input type="email" id="email" required />
+                            <input type="email" name="user_email" id="email" required />
                         </div>
                         <div className="form-field">
                             <label htmlFor="subject"  >Enter your subject</label>
-                            <input type="text" id="subject" />
+                            <input type="text" name="subject" id="subject" />
                         </div>
                         <div className="form-field">
                             <label htmlFor="text-area">Enter your Message*</label>
-                            <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
+                            <textarea name="textarea" name="message" id="textarea" cols="30" rows="10"></textarea>
                         </div>
-                        <div className="form-field f-button">
+                        
+                        <input type="submit" className="btn" value="SEND" />
+                        
+                                                {/* <div className="form-field f-button">
                             <PrimaryButton title={'Send Email'} />
-                        </div>
+                        </div> */}
                     </form>
                 </div>
                 <div className="right-content">
@@ -85,6 +104,21 @@ const ContactPageStyled = styled.section`
             @media screen and (max-width: 502px){
                 width: 100%;
             }
+            .btn{
+                align-items: center;
+                margin-bottom:5px;
+               cursor: pointer;
+               padding: 10px 260px 10px 260px ;
+               border-radius: 5px;
+               background-color: white;
+              font-size: 25px;
+              color: #191D2B;
+
+            }
+            .btn:hover{
+                background-color: #191D2B;
+                color: white;
+            }
             .form-field{
                 margin-top: 2rem;
                 position: relative;
@@ -107,6 +141,7 @@ const ContactPageStyled = styled.section`
                     width: 100%;
                     color: inherit;
                 }
+               
                 textarea{
                     background-color: transparent;
                     border: 1px solid var(--border-color);
@@ -115,6 +150,7 @@ const ContactPageStyled = styled.section`
                     width: 100%;
                     padding: .8rem 1rem;
                 }
+                
             }
 
             
