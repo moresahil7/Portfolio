@@ -31,7 +31,8 @@ function Navigation() {
                 </li>
             </ul>
             <footer className="footer">
-                <p>&copy;<b>2021 Created with 💕 by Sahil </b></p>
+           
+            <p><b>&copy;2021 Created with 💕 by <a href="https://www.linkedin.com/in/moresahil7/">Sahil</a></b></p>
             </footer>
         </NavigationStyled>
     )
@@ -44,16 +45,16 @@ const NavigationStyled = styled.nav`
     align-items: center;
     height: 100%;
     width: 100%;
-    border-right: 1px solid var(--border-color);
+
+    /* border-right: 1px solid ; */
     .avatar{
         width: 100%;
-        border-bottom: 1px solid var(--border-color);
         text-align: center;
         padding: 1rem 0;
         img{
             width: 70%;
             border-radius: 50%;
-            border: 8px solid var(--border-color);
+            border: 2px solid #cbced8;
         }
     }
 
@@ -101,7 +102,6 @@ const NavigationStyled = styled.nav`
     }
 
     footer{
-        border-top: 1px solid var(--border-color);
         width: 100%;
         p{
             padding: 1.3rem 0;

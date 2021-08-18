@@ -13,10 +13,11 @@ function HomePage() {
                 <h1>Hi,My Name is <span>Sahil More</span></h1>
                 <p>
                    IT undergraduate(TE,IT) from <h6>D. Y. Patil College of Engineering, Akurdi, Pune.</h6> Being a Full stack MERN developer I love building 
-                   amazing things on Web.Also I am learning React Js in deep and exploring Machine Learning and Artificial Intelligence.I am web developer and 
+                   amazing things on Web.Also I am exploring Machine Learning and Artificial Intelligence.I am web developer and 
                    also an Android Enthusiast. I build websites using React Js.  
                    Me along with my Friends plan treks when we are away from keyboard.I love playing Chess in my free time.
                 </p>
+                <strong>You can connect with me on my social handles.</strong>
                 <div className="icons">
                     <a href="https://www.facebook.com/moresahil34/" className="icon i-facebook">
                         <Facebook />
@@ -57,7 +58,7 @@ const HomePageStyled = styled.header`
             justify-content: center;
             margin-top: 1rem;
             .icon{
-                border: 2px solid var(--border-color);
+                border: 2px solid #cbced8;
                 display: flex;
                 align-items: center;
                 justify-content: center;

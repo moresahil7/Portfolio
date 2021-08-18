@@ -59,7 +59,7 @@ const ResumeStyled = styled.section`
     }
 
     .resume-content{
-        border-left: 2px solid var(--border-color);
+        border-left: 2px solid #cbced8;
     }
 `;
 export default Resume

@@ -147,7 +147,7 @@ const ContactPageStyled = styled.section`
           color: inherit;
         }
         input {
-          border: 1px solid var(--border-color);
+          border: 1px solid #cbced8;
           outline: none;
           background: transparent;
           height: 50px;
@@ -158,7 +158,7 @@ const ContactPageStyled = styled.section`
 
         textarea {
           background-color: transparent;
-          border: 1px solid var(--border-color);
+          border: 1px solid #cbced8;
           outline: none;
           color: inherit;
           width: 100%;

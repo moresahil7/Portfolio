@@ -24,6 +24,7 @@ function ImageSection() {
                         <p>State</p>
                         <p>Location</p>
                         <p>Occupation</p>
+                        <p>College</p>
                     </div>
                     <div className="info">
                         <p>: Sahil More</p>
@@ -31,7 +32,8 @@ function ImageSection() {
                         <p>: Indian </p>
                         <p>: Maharashtra </p>
                         <p>: Junnar, Pune</p>
-                        <p>: Student</p>
+                        <p>: Student(TE,IT)</p>
+                        <p>: D Y Patil College of Engineering, Akurdi, Pune</p>
                     </div>
                 </div>
                 

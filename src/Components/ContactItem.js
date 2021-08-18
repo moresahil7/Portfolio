@@ -31,7 +31,8 @@ const ContactItemStyled = styled.div`
     }
     .left-content{
         /* padding: 1.5rem; */
-        border: 1px solid var(--border-color);
+        /* border: 1px solid #2e344e; */
+        
         font-size: 2rem;
         display: flex;
         align-items: center;
