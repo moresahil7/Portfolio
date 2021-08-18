@@ -35,6 +35,7 @@ function Skills() {
                        </div>
                        
                        <div className="b">
+                           <hr hidden/>
                        <h6>Libraries and Frameworks</h6>
                        
                        <ul>
@@ -70,12 +71,24 @@ const SkillsStyled = styled.section`
       .main{
        display: flexbox;
        flex-direction: row;
+       @media screen and (max-width: 502px) {
+        display: block;
+        
+      }
+    
+      }
    }
    .a{
        margin-right: 12%;
+       
    }
    .b{
        margin-left: 12%;
+       @media screen and (max-width: 502px) {
+        margin-left: 0%;
+        margin-top:10%;
+        
+      }
    }
 
 `;

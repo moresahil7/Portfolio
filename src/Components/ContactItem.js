@@ -30,7 +30,7 @@ const ContactItemStyled = styled.div`
         margin-bottom: 2.5rem;
     }
     .left-content{
-        padding: 1.5rem;
+        /* padding: 1.5rem; */
         border: 1px solid var(--border-color);
         font-size: 2rem;
         display: flex;
@@ -43,6 +43,7 @@ const ContactItemStyled = styled.div`
     }
 
     .right-content{
+     
         h6{
             color: var(--white-color);
             font-size: 1.2rem;
