@@ -19,7 +19,6 @@ function ImageSection() {
                 <div className="about-info">
                     <div className="info-title">
                         <p>Full Name</p>
-                        <p>Age</p>
                         <p>Nationality </p>
                         <p>State</p>
                         <p>Location</p>
@@ -28,11 +27,10 @@ function ImageSection() {
                     </div>
                     <div className="info">
                         <p>: Sahil More</p>
-                        <p>: 19</p>
                         <p>: Indian </p>
                         <p>: Maharashtra </p>
                         <p>: Junnar, Pune</p>
-                        <p>: Student(TE,IT)</p>
+                        <p>: Student(TE, IT)</p>
                         <p>: D Y Patil College of Engineering, Akurdi, Pune</p>
                     </div>
                 </div>

@@ -9,6 +9,9 @@ import ContactItem from "../Components/ContactItem";
 import emailjs from "emailjs-com";
 import PrimaryButton from "../Components/PrimaryButton";
 import { Button } from "@material-ui/core";
+import Particle from "../Components/Particle";
+
+
 
 function ContactPage() {
   const sendEmail = (e) => {
@@ -31,6 +34,7 @@ function ContactPage() {
   const location = <LocationOnIcon />;
   return (
     <MainLayout>
+  
       <Title title={"Contact"} span={"Contact"} />
       <ContactPageStyled>
         <InnerLayout className={"contact-section"}>

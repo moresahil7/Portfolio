@@ -2,8 +2,6 @@ import React from 'react'
 import styled from 'styled-components';
 import {NavLink} from 'react-router-dom';
 import avatar from '../img/avatar.png';
-import { Copyright } from '@material-ui/icons';
-
 function Navigation() {
     return (
         <NavigationStyled>
@@ -32,7 +30,7 @@ function Navigation() {
             </ul>
             <footer className="footer">
            
-            <p><b>&copy;2021 Created with 💕 by <a href="https://www.linkedin.com/in/moresahil7/">Sahil</a></b></p>
+            <p>&copy;2021 Created with 💕 by <a href="https://www.linkedin.com/in/moresahil7/">Sahil</a></p>
             </footer>
         </NavigationStyled>
     )
@@ -105,10 +103,13 @@ const NavigationStyled = styled.nav`
         width: 100%;
         p{
             padding: 1.3rem 0;
-            font-size: 1.1rem;
+            font-size: 12px;
             display: block;
             text-align: center;
            
+        }
+        a{
+            font-size: 12px;
         }
     }
 `;
