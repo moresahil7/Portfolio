@@ -16,7 +16,8 @@ import Particle from "../Components/Particle";
 function ContactPage() {
   const sendEmail = (e) => {
     e.preventDefault();
-
+    e.target.reset();
+   
     emailjs
       .sendForm(
         "service_fhdptoa",
@@ -42,7 +43,7 @@ function ContactPage() {
             <div className="contact-title">
               <h4>Get In Touch</h4>
             </div>
-            <form className="form" onSubmit={sendEmail}>
+            <form className="form" onSubmit={sendEmail} >
               <div className="form-field">
                 <label htmlFor="name">Enter your name*</label>
                 <input type="text" name="name" id="name" required />
@@ -66,7 +67,7 @@ function ContactPage() {
                 ></textarea>
               </div>
               <div className="form-field f-button">
-                           <PrimaryButton title={"Send Email"} />
+                           <PrimaryButton title={"Send Email"}  />
             </div>
             </form>
           </div>
