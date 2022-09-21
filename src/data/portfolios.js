@@ -6,6 +6,7 @@ import port5 from '../img/portImages/port5.jpeg';
 import port6 from '../img/portImages/port6.jpeg';
 import port7 from '../img/portImages/port7.jpg';
 import port8 from '../img/portImages/port8.jpeg';
+import port9 from '../img/portImages/port9.png'
 
 const portfolios = [
     {
@@ -76,6 +77,15 @@ const portfolios = [
         image: port8,
         title: 'SponHub',
         description: 'Building Sponsors Hub.'
+        
+    },
+    {
+        id: 9,
+        category: 'React Js',
+        link: 'https://chatapp-23256.web.app/',
+        image: port9,
+        title: 'FreeChat',
+        description: 'Developed a chat application where I implemented one to one chat feature. Used React JS library for frontend and Firebase for backend.Firestore databse for storage also integrated Email and Password Signin'
         
     },
 ]

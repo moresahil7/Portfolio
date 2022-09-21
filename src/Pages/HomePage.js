@@ -2,6 +2,8 @@ import React from 'react'
 import styled from 'styled-components';
 import Particle from '../Components/Particle';
 import { Instagram, Twitter,GitHub,Facebook, LinkedIn } from '@material-ui/icons';
+import leetcode from '../img/leetcode.svg'
+// import {SiLeetcode } from "react-icons/si";
 
 function HomePage() {
     return (
@@ -33,6 +35,9 @@ function HomePage() {
                     </a>
                     <a href="https://www.linkedin.com/in/moresahil7/" className="icon i-linkedin">
                         <LinkedIn />
+                    </a>
+                    <a href="https://leetcode.com/moresahil7/" className="">
+                    <img src={leetcode} alt=""/>
                     </a>
                 </div>
             </div>
