@@ -14,7 +14,7 @@ function HomePage() {
             <div className="typography">
                 <h1>Hi,My Name is <span>Sahil More</span></h1>
                 <p>
-                   IT undergraduate(TE, IT) from <h6>D. Y. Patil College of Engineering, Akurdi, Pune.</h6> Being a Full stack MERN developer I love building 
+                   IT undergraduate(BE, IT) from <h6>D. Y. Patil College of Engineering, Akurdi, Pune.</h6> Being a Full stack MERN developer I love building 
                    amazing things on Web.Also I am exploring Machine Learning and Artificial Intelligence.I am web developer and 
                    also an Android Enthusiast. I build websites using React Js.  
                    Me along with my Friends plan treks when we are away from keyboard.I love playing Chess in my free time.
